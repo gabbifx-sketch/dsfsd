@@ -1,0 +1,758 @@
+html{
+    scroll-behavior: smooth;
+        transition: 1s cubic-bezier(1, -0.89, 1, 1.37);
+}
+
+#blog{
+
+}
+body{
+    background-color: aliceblue;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+header p{
+    margin-left: 100px;
+}
+
+.sign-in-up a{
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+}
+
+
+.sign-in-up{
+    margin-right: 100px;
+    width: 200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+/* Nav */
+.nav{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.363);
+    background-color: aliceblue;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 50px;
+    text-decoration: none;
+    margin-left: 40px;
+    font-family: 'Segoe Scripts';
+    cursor: pointer;
+}
+
+.logo span{
+    color: rgb(190, 17, 224);
+    font-family: cursive;
+}
+.nav-links{
+    margin-right: 40px;
+}
+
+.nav-links a{
+    color: black;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 10px;
+    font-size: 20px;
+    position: relative;
+    cursor: pointer;
+}
+.nav-links a:after {
+    content: "";
+    position: absolute;
+    background: rgb(190, 17, 224);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+.nav-links a:hover:after{
+    width: 100%;
+    cursor: pointer;
+}
+
+
+/* Hero */
+.hero{
+    background-image: url(./img/Screenshot\ 2025-12-04\ 223901.png);
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+}
+
+
+.hero-content{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-p1{
+    margin: 0;
+    color: rgb(181, 63, 205);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-heading{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.hero-p2{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    width: 400px;
+}
+
+.hero-btn{
+    width: 200px;
+    height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: rgb(190, 17, 224);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    opacity: 0.8;
+}
+
+
+.info{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border-radius: 8px;
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    z-index: 20;
+    cursor: pointer;
+    animation: noti 1s infinite cubic-bezier(1, -0.71, 0, 1.6);
+    border: 1px solid rgb(190, 17, 224);
+}
+@keyframes noti {
+    0%{}
+    30%{
+        transform: rotate(20deg);
+    }
+    50%{
+        transform: rotate(-20deg);
+    }
+}
+.info svg{
+    width: 100px;
+    height: 100px;
+}
+/* section-two */
+.section-two{
+    height: 500px;
+    width: 100%;
+}
+
+.section-two-heading{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    width: 100%;
+}
+
+
+.span{
+    height: 3px;
+    background-color: rgb(181, 63, 205);
+    margin: 5px;
+}
+.line-one{
+    width: 90px;
+    margin-top: -20px;
+}
+.line-two{
+    width: 70px;
+}
+.line-three{
+    width: 50px;
+}
+
+.section-two-header{
+    margin-left: 50px;
+}
+
+.section-two-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-two-container{
+    width: 300px;
+    height: 400px;
+    background-color: black;
+    border-radius: 20px;
+    margin: 10px;
+    overflow: hidden;
+}
+.section-two-img{
+    background-image: url(./img/minimal-chic.avif);
+    width: 100%;
+    height: 65%;
+    background-size: cover;
+    background-position: center;
+}
+
+.two{
+    background-image: url(./img/art-of-fashion-03.avif);
+}
+.three{
+    background-image: url(./img/noir-fashion-hero-03.avif);
+}
+.four{
+    background-image: url(./img/spring-bloom.avif);
+}
+.section-two-content{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.section-two-content p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin: 0;
+}
+.section-two-content h5{
+    color: white;
+    font-size: 19px;
+    font-family: cursive;
+    font-weight: lighter;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.section-two-content-btn{
+    background-color: rgb(190, 17, 224);
+    border: none;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 15px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    font-weight: lighter;
+}
+
+/* section three */
+.section-three{
+    width: 100%;
+    height: 500px;
+}
+
+.section-three-header{
+    margin-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+.section-three-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-three-container{
+    width: 300px;
+    height: 400px;
+    background-color: black;
+    border-radius: 20px;
+    margin: 10px;
+    overflow: hidden;
+}
+.section-three-img{
+    background-image: url(./img/accent-pieces.avif);
+    width: 100%;
+    height: 65%;
+    background-size: cover;
+    background-position: center;
+}
+.section-three-content{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.section-three-content p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin: 0;
+}
+.section-three-content h5{
+    color: white;
+    font-size: 19px;
+    font-family: cursive;
+    font-weight: lighter;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.section-three-container .two{
+    background-image: url(./img/spring-bloom.avif);
+}
+.section-three-container .three{
+    background-image: url(./img/neo-classic.avif);
+}
+.section-three-container .four{
+    background-image: url(./img/noir-fashion-hero-01.avif);
+}
+
+.more-option{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.more-option a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.158);
+}
+.more-option a svg{
+    margin-top: 5px;
+    margin-left: 10px;
+    animation: svgAnimation 1s ease-in infinite;
+}
+@keyframes svgAnimation{
+    0%{
+
+    }
+    100%{
+        opacity: 0.3;
+    }
+}
+
+/* section four */
+.section-four{
+    width: 100%;
+    height: 400px;
+    margin-top: 150px;
+}
+.news-heading{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.section-four p{
+    font-size: 30px;
+    color: rgb(190, 17, 224);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+.section-four h1{
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+}
+.section-four-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+.section-four-content .pic{
+    width: 400px;
+    height: 450px;
+    background-image: url(./img/urban-edge.avif);
+        background-size: cover;
+        overflow: hidden;
+}
+.pic-two{
+    width: 400px;
+    height: 450px;
+    background-image: url(./img/art-of-fashion-01.avif);
+    background-size: cover;
+    overflow: hidden;
+}
+.pic-two:hover .hover-effect{
+    opacity: 1;
+    height: 100%;
+}
+
+.pic-three{
+    width: 400px;
+    height: 450px;
+    background-image: url(./img/art-of-fashion-02.avif);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+.pic-three:hover .hover-effect{
+    opacity: 1;
+    height: 100%;
+}
+
+.pic:hover .hover-effect{
+    opacity: 1;
+    height: 100%;
+}
+
+
+
+.hover-effect h3{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    font-size: 35px;
+}
+
+.hover-effect a{
+    color: white;
+    font-size: 19px;
+    text-decoration: none;
+    transition: 0.8s;
+    margin-bottom: 5px;
+}
+.hover-effect a:hover{
+    color: rgb(176, 174, 177);
+}
+
+.hover-effect{
+    background-color: rgba(0, 0, 0, 0.733);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    opacity: 0;
+    height: 0;
+    transition: 1s cubic-bezier(0.6, -0.3, 0.07, 0.79);
+}
+
+.a-line{
+    height: 3px;
+    width: 5px;
+    background-color: rgb(218, 146, 231);
+    transition: 1s ease-in-out;
+    animation: readMore 1s infinite;
+}
+
+@keyframes readMore{
+    0%{
+
+    }
+    100%{
+        width: 100px;
+        background-color: rgb(190, 17, 224);
+    }
+}
+
+/* Section five */
+.section-five{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.first-content{
+    width: 500px;
+}
+
+.section-five-title{
+    font-size: 30px;
+    color: rgb(181, 63, 205);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.meaning{
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.section-five h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.location{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.contact-form-warp{
+    width: 400px;
+}
+.comment-title {
+	margin-bottom: 45px;
+}
+
+.comment-list {
+	list-style: none;
+}
+
+.comment-list li {
+	margin-bottom: 40px;
+	overflow: hidden;
+}
+
+.comment-list .comment .comment-avator {
+	width: 63px;
+	height: 63px;
+	border-radius: 50%;
+	float: left;
+}
+
+.comment-list .comment .comment-content {
+	padding-left: 100px;
+}
+
+.comment-list .comment .comment-content h5 {
+	font-size: 12px;
+	color: #131313;
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+
+.comment-list .comment .comment-content h5 span {
+	color: #ffb320;
+	padding-left: 18px;
+}
+
+.comment-list .comment .comment-content p {
+	font-size: 12px;
+	margin-bottom: 5px;
+}
+
+.comment-list .comment .comment-content .reply {
+	font-size: 12px;
+	color: #ff1d55;
+}
+
+.comment-form-warp {
+	padding-top: 30px;
+}
+
+.comment-form input[type=text],
+.comment-form input[type=email],
+.comment-form textarea {
+	width: 300px;
+	height: 41px;
+	border: 1px solid rgb(153, 128, 158);
+	padding-left: 22px;
+	padding-right: 45px;
+	font-size: 12px;
+    margin-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    border-radius: 2px;
+}
+
+.comment-form textarea {
+	height: 100px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    border-radius: 2px;
+}
+
+.col-lg-12 button{
+    color: white;
+    background-color: black;
+}
+
+.map{
+    width: 100%;
+    height: 400px;
+    margin-top: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* footer */
+footer{
+    background-color: black;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-first{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.first-container{
+    width: 400px;
+    height: 100%;
+    margin-left: 100px;
+}
+
+.first-container a{
+    text-decoration: none;
+}
+
+.first-container .logo{
+    color: white;
+    margin: 0;
+}
+
+.first-container p{
+    color: rgb(182, 181, 181);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.second-container{
+    width: 400px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}
+
+.footer-first h2{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.second-container a{
+    text-decoration: none;
+    color: rgb(176, 174, 177);
+    font-size: 18px;
+    width: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px;
+    transition: 0.3s;
+}
+.second-container a:hover{
+    transform: translateX(10px);
+}
+
+.third-container{
+    width: 400px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.third-container p{
+    color: rgb(176, 174, 177);
+    font-family: Arial, Helvetica, sans-serif;
+    width: 300px;
+}
+
+.third-container input{
+    width: 200px;
+    height: 42px;
+    border: none;
+    background-color: transparent;
+    color: rgb(176, 174, 177);
+    font-size: 15px;
+    outline: none;
+    margin-bottom: -10px;
+}
+.third-container button{
+    width: 200px;
+    background-color:rgb(190, 17, 224);
+    cursor: pointer;
+    height: 48px;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+
+.third-container hr{
+    width: 200px;
+    margin-left: 0px;
+}
+
+.footer-second{
+    width: 90%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.footer-second hr{
+    width: 100%;
+}
+
+.footer-second p{
+    font-size: 18px;
+    color: rgb(182, 181, 181);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.footer-second a{
+    color: rgb(181, 63, 205);
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.footer-second a:hover{
+    text-decoration: underline;
+}
+
